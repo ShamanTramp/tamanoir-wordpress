@@ -1,0 +1,1271 @@
+/*
+Theme Name: Tamanoir-Nisarg
+Author: ShamanTramp
+Author URI: http://shamantramp.com
+Description: Adaptation du thème Nisarg pour le site du Tamanoir !
+Version: 0.1
+Template: Nisarg
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+p, span:not(.ab-icon), div, h1, h2, h3, h4, h5, h6, form {font-family: 'Roboto', sans-serif !important;font-weight: 200} 
+
+/* Header Custom */
+
+.main-navigation {
+    background-color: #2A251F;
+     box-shadow: 0px 0px 10px rgb(42,37,31);
+		height: 60px;
+		transition-duration: 0.5s;
+	display: flex;
+}
+.main-navigation:hover {
+    background-color: #2A251F;
+		height: 100px;
+}
+
+#navigation_menu {
+	margin: auto;
+}
+
+#cc_spacer {
+	height: 60px !important;
+}
+
+.main-navigation .primary-menu > li > a {
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+  color: #fff;
+	font-size: 1.2vw;
+	font-weight: 200;
+}
+
+.site-header {
+    background-size: auto 100%;
+    background-attachment: fixed;
+    background-position: top center;
+		margin-bottom: 0;
+		position: relative;
+		height: 90vh;
+}
+
+.site-branding {
+	position: fixed !important;
+}
+
+a.home-link {
+	position: relative;
+}
+
+.site-description {
+    font-size: 400%;
+    letter-spacing: 5px;
+}
+
+.site-title::after {
+    display: none;
+}
+
+.site-title {
+    font-size: 600%;
+    letter-spacing: 0px;
+}
+.site-description, .site-title {
+    color: #fff;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-shadow:  none;
+}
+
+.main-navigation .primary-menu > li > a:hover, .main-navigation .primary-menu > li > a:focus {
+    color: #ddd;
+	  text-decoration: none;
+}
+
+.site-branding a:active, 
+.site-branding a:hover, 
+.site-branding a:focus {
+    color: transparent;
+}
+
+#navigation_menu {
+	display: flex;
+	width: 100vw;
+	margin: 0;
+	justify-content: space-between;
+}
+
+#navigation_menu div:nth-child(1) {
+	margin: 0 auto 0 auto;
+	flex: 1;
+}
+
+#navigation_menu div:nth-child(2) {
+	flex: 3;
+	margin: auto;
+}
+
+#navigation_menu div.menu-menu-social-container {
+	display: flex;
+	flex: 1;
+	justify-content: flex-end;
+}
+
+#navigation_menu div.menu-menu-social-container ul {
+	display: flex;
+}
+
+#navigation_menu div.menu-menu-social-container ul li {
+	margin: auto 5px auto 5px;
+}
+
+#navigation_menu div.menu-menu-social-container ul li img {
+	margin: auto;
+}
+
+#menu-menu-header {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+#menu-menu-header li:nth-child(1):hover {
+	background-color: #779147;
+}
+
+#menu-menu-header li:nth-child(2):hover {
+	background-color: #D55437;
+}
+
+#menu-menu-header li:nth-child(3):hover {
+	background-color: #76522E;
+}
+
+#menu-menu-header li:nth-child(4):hover {
+	background-color: #E59D37;
+}
+
+#menu-menu-header li:nth-child(5):hover {
+	background-color: #72A278;
+}
+
+#menu-menu-header li:nth-child(6):hover {
+	background-color: #E6C69D;
+}
+
+#menu-menu-header li {
+	margin: auto;
+	height: 60px;
+	transition-duration: 0.5s;
+	display: flex;
+	flex: 1;
+}
+
+#menu-menu-header li a {
+	margin: auto;
+	height: 60px;
+	transition-duration: 0.5s;
+	display: flex;
+	position: relative;
+  border-top: none;
+	width: 70px;
+}
+
+
+.main-navigation .primary-menu > .current-menu-item:nth-child(1) > a, .main-navigation .primary-menu > .current-menu-item:nth-child(1) > a:hover, .main-navigation .primary-menu > .current-menu-item:nth-child(1) > a:focus {
+    border-bottom: 3px solid #779147;
+}
+
+.main-navigation .primary-menu > .current-menu-item:nth-child(2) > a, .main-navigation .primary-menu > .current-menu-item:nth-child(2) > a:hover, .main-navigation .primary-menu > .current-menu-item:nth-child(2) > a:focus {
+    border-bottom: 3px solid #D55437;
+}
+
+.main-navigation .primary-menu > .current-menu-item:nth-child(3) > a, .main-navigation .primary-menu > .current-menu-item:nth-child(3) > a:hover, .main-navigation .primary-menu > .current-menu-item:nth-child(3) > a:focus {
+    border-bottom: 3px solid #76522E;
+}
+
+.main-navigation .primary-menu > .current-menu-item:nth-child(4) > a, .main-navigation .primary-menu > .current-menu-item:nth-child(4) > a:hover, .main-navigation .primary-menu > .current-menu-item:nth-child(4) > a:focus {
+    border-bottom: 3px solid #E59D37;
+}
+
+.main-navigation .primary-menu > .current-menu-item:nth-child(5) > a, .main-navigation .primary-menu > .current-menu-item:nth-child(5) > a:hover, .main-navigation .primary-menu > .current-menu-item:nth-child(5) > a:focus {
+    border-bottom: 3px solid #E6C69D;
+}
+
+.main-navigation .primary-menu > .current-menu-item:nth-child(6) > a, .main-navigation .primary-menu > .current-menu-item:nth-child(6) > a:hover, .main-navigation .primary-menu > .current-menu-item:nth-child(6) > a:focus {
+    border-bottom: 3px solid #72A278;
+}
+
+#menu-menu-header li a span {
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+	opacity: 0;
+	transition-duration: 0.5s;
+	font-size: 150%;
+	width: auto;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#menu-menu-header li a:hover {
+	padding-top: 30px;
+}
+
+#menu-menu-header li a img {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 1;
+	transition-duration: 0.5s;
+}
+
+#menu-menu-header li:hover {
+	height: 100px;
+}
+
+.main-navigation:hover #menu-menu-header li {
+	height: 100px;
+}
+
+.main-navigation:hover #menu-menu-header li a {
+	height: 100px;
+	width: 100%;
+}
+
+.main-navigation:hover #menu-menu-header li a img {
+	margin-top: 20px;
+	opacity: 0;
+}
+
+.main-navigation:hover #menu-menu-header li a span {
+	opacity: 1;
+	width: auto;
+	padding-top: 20px;
+}
+
+
+.main-navigation:hover #menu-menu-header li a img:last-child {
+	opacity: 1;
+}
+
+a.navbar-brand {
+	padding: 0;
+}
+
+a.navbar-brand #tama-logo {
+	height: 50px;
+	width: 120px;
+	transition-duration: 0.5s;
+	background-image: url(https://www.asso-letamanoir.com/img/icons/tamanoir-logo.png);
+	background-size: cover;
+}
+
+a.navbar-brand:hover #tama-logo {
+	background-image: url(https://www.asso-letamanoir.com/img/icons/tamanoir-logo.gif);}
+
+.main-navigation:hover #tama-logo {
+	padding-top: 0;
+	height: 90px;
+	width: 170px;
+}
+
+
+/* End Header Custom */
+
+#content {
+	margin-top: 0em;
+}
+
+#content .container {
+	width: 100%;
+}
+
+#tm-index-container #primary {
+	width: 70%;
+	margin-left: 2%;
+	transform: translateY(-120px);
+	
+}
+
+#tm-index-container #secondary {
+	width: 26%;
+	
+}
+
+/*=========================*/
+
+.equipe-card {display: inline-block;width: 28vw;margin: 1px;background-color: white;border: 1px solid rgb(52,47,41);overflow: hidden;cursor: pointer;transition-duration: 0s;}
+
+
+
+
+
+.equipe-card .equipe-pic-circle img {
+
+	-webkit-filter: grayscale(100%);
+
+	filter: grayscale(100%);
+
+
+
+}
+
+
+
+.equipe-card:hover .equipe-pic-circle img {
+
+	-webkit-filter: grayscale(0%);
+
+	filter: grayscale(0%);
+
+
+
+}
+
+
+
+.card-open {width: 84.3vw;order: -1}
+
+
+.card-open .equipe-card {width: 100%;height: 45vw;cursor: default;}
+
+
+
+/*.card-list {width: auto;height: 15vw;flex: 1;}*/
+
+
+
+.card-open .equipe-card .equipe-pic-circle img {
+
+	-webkit-filter: grayscale(0%);
+
+	filter: grayscale(0%);
+
+
+
+}
+
+.equipe-pic-box {
+
+	height: 60%;
+
+	display: flex;
+
+	background-color: rgb(52,47,41);
+
+    transition-duration: 0.2s;
+
+
+
+}
+
+
+
+.card-open .equipe-card .equipe-pic-box {
+
+	height: 15%;
+
+}
+
+
+
+.card-open .equipe-card.equipeLime {border: 1px solid rgb(119,145,71)}
+
+.card-open .equipe-card.equipeLime .equipe-pic-box {background-color: rgb(119,145,71)}
+
+.card-open .equipe-card.equipeLime ul {border-right: 1px solid rgb(119,145,71)}
+
+
+
+.card-open .equipe-card.equipeRed {border: 1px solid rgb(213,84,55)}
+
+.card-open .equipe-card.equipeRed .equipe-pic-box {background-color: rgb(213,84,55)}
+
+.card-open .equipe-card.equipeRed ul {border-right: 1px solid rgb(213,84,55)}
+
+
+
+.card-open .equipe-card.equipeBrown {border: 1px solid rgb(118,82,46)}
+
+.card-open .equipe-card.equipeBrown .equipe-pic-box {background-color: rgb(118,82,46)}
+
+.card-open .equipe-card.equipeBrown ul {border-right: 1px solid rgb(118,82,46)}
+
+
+
+.card-open .equipe-card.equipeAmber {border: 1px solid rgb(229,157,55)}
+
+.card-open .equipe-card.equipeAmber .equipe-pic-box {background-color: rgb(229,157,55)}
+
+.card-open .equipe-card.equipeAmber ul {border-right: 1px solid rgb(229,157,55)}
+
+
+
+.card-open .equipe-card.equipeLightPink {border: 1px solid rgb(230,198,157)}
+
+.card-open .equipe-card.equipeLightPink .equipe-pic-box {background-color: rgb(230,198,157)}
+
+.card-open .equipe-card.equipeLightPink ul {border-right: 1px solid rgb(230,198,157)}
+
+
+
+.card-open .equipe-card.equipeBlueGreen {border: 1px solid rgb(114,162,120)}
+
+.card-open .equipe-card.equipeBlueGreen .equipe-pic-box {background-color: rgb(114,162,120)}
+
+.card-open .equipe-card.equipeBlueGreen ul {border-right: 1px solid rgb(114,162,120)}
+
+
+
+
+
+.bio-cross {display:none;}
+
+
+
+.card-open .equipe-card .bio-cross {
+
+	display: block;
+
+	width: 2.5vw;
+
+	height: 2.5vw;
+
+	margin: auto auto auto 2.5%;
+
+}
+
+
+
+.bio-cross img {
+
+	height: 100%;
+
+	width: auto;
+
+    cursor: pointer;
+
+	-webkit-filter: invert(1);
+
+	filter: invert(1);
+
+    transition-duration: 0.5s;
+
+
+
+}
+
+.bio-cross:hover img {
+
+	height: 100%;
+
+	width: auto;
+
+	-webkit-transform: rotate(90deg);
+
+	transform: rotate(90deg);
+
+
+
+}
+
+
+
+.equipe-pic-circle {width: 8vw;height: 8vw;margin: auto;border-radius: 50%;border: 1px solid white;overflow: hidden;transition-duration: 0.5s;margin-top: 0.7vw;}
+
+
+
+.card-open .equipe-card .equipe-pic-circle {width: 5vw; height: 5vw;margin: auto 1% auto auto;}
+
+
+
+/*.card-list .equipe-pic-circle {width: 5vw; height: 5vw;}*/
+
+
+
+
+
+.equipe-pic-circle img {
+
+	height: 100%;
+
+	width: auto;
+
+}
+
+/*.card-open .equipe-card .equipe-pic-circle:hover {transform: scale(2.5) translate(-23%,23.5%);}*/
+
+
+
+
+.equipe-triangle-box {
+
+	width: 0;
+
+	height: 0;
+
+	margin: -3% auto 3% auto;
+
+	border-style: solid;
+
+	border-width: 4vw 4vw 0 4vw;
+
+	border-color:  rgb(52,47,41) transparent transparent transparent;
+
+    transition-duration: 0.2s;
+
+
+
+}
+
+
+
+.card-open .equipe-card .equipe-triangle-box {display: none;}
+
+
+
+/*.card-list .equipe-triangle-box {border-width: 2vw 2vw 0 2vw;}*/
+
+
+
+.equipe-bio-name {display: none}
+
+
+
+.card-open .equipe-card .equipe-bio-name {
+
+	display: block;
+
+	color: white;
+
+	text-align: center;
+
+	font-size: 3vw;
+
+	margin: auto;
+
+}
+
+
+
+.equipe-name-box {
+
+	text-align: center;
+
+	font-size: 2vw;
+
+	height: 5vw;
+     padding-top: 1.5vw;
+
+
+
+}
+
+
+
+.card-open .equipe-card .equipe-name-box {display: none;}
+
+
+/*.card-team.card-list .equipe-name-box {font-size: 1.3vw}*/
+
+
+
+
+
+
+
+
+.equipe-bio-content {display: none;}
+
+
+
+.card-open .equipe-card .equipe-bio-content {
+
+	display: flex;
+
+	height: 100%;
+
+}
+
+
+
+.equipe-bio-content ul {
+
+	display: inline-block;
+
+	height: 100%;
+
+	width: 30%;
+
+	overflow: hidden;
+
+}
+
+
+
+.equipe-bio-content h3 {
+
+	font-size: 1rem;
+
+	color: black;
+
+	border-top: 1px lightgray solid;
+
+	padding: 3% 5% 0 5%;
+
+	margin-top: 2%;
+
+	width: 100%;
+
+}
+
+
+
+.equipe-bio-content h3:first-of-type {
+
+	border-top: none;
+
+	margin-top: 0%;
+
+}
+
+
+
+.equipe-bio-content li {
+
+	height: 6%;
+
+	list-style: none;
+
+}
+
+.equipe-bio-content li:last-of-type {
+
+	padding-bottom: 15%;
+
+}
+
+
+
+.equipe-bio-content li div {
+
+	display: flex;
+
+	width: 100%;
+
+}
+
+
+
+.equipe-bio-content li div img {
+
+	width: 1.8vw;
+
+	height: 1.8vw;
+
+	margin: 0.9vw 1vw 0 1vw;
+
+}
+
+
+
+.equipe-bio-content li p {
+
+	flex: 1;
+
+      line-height: 1.4vw;
+    font-size: 1.4vw;
+
+	color: black;
+
+	margin: 4% auto auto auto;
+
+}
+
+
+
+.equipe-bio-content > div {display: inline-block;height: 100%;width: 70%;margin: 0 2.5% 0 2.5%;}
+
+.equipe-bio-content > div a:hover{text-decoration:underline}
+
+.equipe-bio-content h4 {
+
+	font-size: 2.3vw;
+
+	color: black;
+
+	border-bottom: 1px lightgray solid;
+
+	margin-top: 2.5%;
+
+	width: 100%;
+
+}
+
+
+
+.equipe-bio-content h4:last-of-type {
+
+	margin-top: 2%;
+
+}
+
+
+
+.equipe-bio-content > div p {
+
+	font-size: 1.3vw;
+
+	text-align: justify;
+
+	color: black;
+
+	margin-top: 1%;
+
+	line-height: 1.4vw;
+
+}
+
+
+
+
+.equipe-bio-content > div > div:not(.scroll-x) {display: flex;height: 35%;flex-direction: row;}
+
+.equipe-bio-content > div > div > div {display: block;flex: 8;/* height: 100%; */padding-bottom: 0;}
+
+.equipe-bio-content > div p.list {
+
+	display: list-item;
+	list-style-type: circle;
+	margin-left: 1.5vw;
+}
+
+.equipe-bio-content > div p a {font-weight: bold}
+
+.equipeLime .equipe-bio-content > div p a {color:rgb(119,145,71)}
+
+.equipeRed .equipe-bio-content > div p a {color:rgb(213,84,55)}
+
+.equipeBrown .equipe-bio-content > div p a {color:rgb(118,82,46)}
+
+.equipeAmber .equipe-bio-content > div p a {color:rgb(229,157,55)}
+
+.equipeLightPink .equipe-bio-content > div p a {color:rgb(230,198,157)}
+
+.equipeBlueGreen .equipe-bio-content > div p a {color:rgb(114,162,120)}
+
+.equipe-bio-content nav {
+
+	min-width: 10%;
+	width: auto;
+	max-width: 20%;
+
+	height: 100%;
+
+	padding: 2% 0 0 5%;
+
+	text-align: left;
+
+
+
+}
+
+
+
+.equipe-bio-content nav a {
+
+	width: 3vw;
+
+	height: 3vw;
+
+	margin: 1vw;
+
+	display: inline-block;
+
+	border-radius: 6px;
+
+	overflow: hidden;
+
+	transition-duration: 0.5s;
+
+}
+
+
+
+.equipe-bio-content nav a img {
+
+	width: 3vw;
+
+	height: 3vw;
+
+}
+
+
+
+.equipe-bio-content nav a:hover {
+
+	filter: saturate(2);
+
+}
+
+
+
+
+
+.equipeLime .equipe-bio-content div nav a:last-of-type {background-color:rgb(119,145,71)}
+.equipeLime:hover {border: 1px solid rgb(119,145,71)}
+.equipeLime:hover .equipe-pic-box {background-color: rgb(119,145,71)}
+.equipeLime:hover .equipe-triangle-box {border-color:  rgb(119,145,71) transparent transparent transparent}
+
+.equipeRed .equipe-bio-content div nav a:last-of-type {background-color:rgb(213,84,55)}
+.equipeRed:hover { border: 1px solid rgb(213,84,55)}
+.equipeRed:hover .equipe-pic-box {background-color: rgb(213,84,55)}
+.equipeRed:hover .equipe-triangle-box {border-color:  rgb(213,84,55) transparent transparent transparent}
+
+.equipeBrown .equipe-bio-content div nav a:last-of-type {background-color:rgb(118,82,46)}
+.equipeBrown:hover {border: 1px solid rgb(118,82,46)}
+.equipeBrown:hover .equipe-pic-box {background-color: rgb(118,82,46)}
+.equipeBrown:hover .equipe-triangle-box {border-color:  rgb(118,82,46) transparent transparent transparent}
+
+.equipeAmber .equipe-bio-content div nav a:last-of-type {background-color:rgb(229,157,55)}
+.equipeAmber:hover {border: 1px solid rgb(229,157,55)}
+.equipeAmber:hover .equipe-pic-box {background-color: rgb(229,157,55)}
+.equipeAmber:hover .equipe-triangle-box {border-color:  rgb(229,157,55) transparent transparent transparent}
+
+
+.equipeLightPink .equipe-bio-content div nav a:last-of-type {background-color:rgb(230,198,157)}
+.equipeLightPink:hover {border: 1px solid rgb(230,198,157)}
+.equipeLightPink:hover .equipe-pic-box {background-color: rgb(230,198,157)}
+.equipeLightPink:hover .equipe-triangle-box {border-color:  rgb(230,198,157) transparent transparent transparent}
+
+
+.equipeBlueGreen .equipe-bio-content div nav a:last-of-type {background-color:rgb(114,162,120)}
+.equipeBlueGreen:hover {border: 1px solid rgb(114,162,120)}
+.equipeBlueGreen:hover .equipe-pic-box {background-color: rgb(114,162,120)}
+.equipeBlueGreen:hover .equipe-triangle-box {border-color:  rgb(114,162,120) transparent transparent transparent}
+
+
+.scroll-x {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 100%;
+	height: 13vw;
+	padding-right: 1%;
+	position: relative;
+}
+
+.scroll-x::-webkit-scrollbar {
+    width: 0.3vw;
+}
+
+.scroll-x::-webkit-scrollbar-track {  
+    border-radius: 10px;
+	background-color: transparent;
+}
+
+.scroll-x::-webkit-scrollbar-thumb { 
+    border-radius: 10px;
+    background-color: lightgray;
+}
+
+
+
+
+
+
+
+
+#site-header {
+	position: relative;
+}
+
+#slider_accueil {
+	z-index: 0;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+#slider_accueil .sa_hover_container {
+	display: flex;
+}
+
+.site-branding, #content {
+	z-index: 1 !important;
+}
+
+#content {
+	position: relative;
+	background-color: white !important;
+}
+
+
+
+/*=============================*/
+
+.entry-title a{
+    font-size: 145%;
+	text-align: justify;
+	width: 100%;
+}
+
+.entry-title a:hover, .entry-title a:focus {
+    color: #779147;
+		text-decoration: none;
+}
+
+.entry-content p{
+    font-size: 180%;
+}
+
+
+/*=============================*/
+
+.container div.row {
+	position: relative;
+	background-color: white;
+	z-index: 1;
+}
+
+#tm-head-trailer {
+	height: 60vh;
+}
+
+.site-branding {
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	z-index: 0;
+}
+
+
+
+/*=============================*/
+
+#secondary {
+	margin-top: 50px;
+}
+
+
+/*=============================*/
+
+
+.site-footer {
+	z-index: 2;
+	position: relative;
+	bottom: -1px;
+}
+
+
+
+
+/*=============================*/
+
+#tm-projets-container article .entry-header, 
+#tm-asso-container article .entry-header,
+#tm-fourmis-container article .entry-header {
+    margin: auto;
+	margin-top: 10vh;
+}
+
+#tm-projets-container article .entry-header h1, 
+#tm-asso-container article .entry-header h1,
+#tm-fourmis-container article .entry-header h1 {
+    font-size: 500%;
+	color: white;
+}
+
+
+
+#tm-projets-container #secondary,
+#tm-asso-container #secondary,
+#tm-fourmis-container #secondary {
+	display: none;
+}
+#tm-projets-container #primary,
+#tm-asso-container #primary,
+#tm-fourmis-container #primary {
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+	border: none;
+}
+#tm-projets-container article, #tm-projets-container div#comments,
+#tm-asso-container article, #tm-asso-container div#comments,
+#tm-fourmis-container article, #tm-fourmis-container div#comments {
+	box-shadow: none;
+}
+
+#tm-projets-container article {
+	height: 90vh;
+	color: white;
+}
+
+#tm-projets-container article p {
+	color: white;
+}
+
+#tm-projets-container article a {
+	color: white;
+	text-decoration: none;
+}
+
+#tm-projets-container article li {
+	list-style: none;
+}
+
+
+/*=============================*/
+
+
+#tm-asso-container article:not(.fiche-equipe) {
+	height: auto;
+	min-height: 90vh;
+	display: flex;
+	flex-direction: column;
+}
+
+#tm-asso-container article, #tm-asso-container article a, #tm-asso-container article p {
+	color: white;
+}
+
+#tm-asso-container article .entry-header, #tm-asso-container article .entry-content {
+	margin: auto;
+}
+
+#tm-asso-container article .entry-footer {
+	display: none;
+}
+
+#tm-asso-container article:not(.fiche-equipe) {
+	background-color: #779147;
+}
+
+#tm-asso p {
+	line-height: 120%;
+	font-size: 200%;
+	width: 85%;
+	margin: 10px auto;
+}
+
+#tm-asso-container article .entry-header h1 {
+	font-size: 500%;
+}
+
+/*=============================*/
+
+
+#tm-projets-container article:nth-child(1) {
+	background-color: #D55437;
+}
+
+#tm-projets-container article:nth-child(2) {
+	background-color: grey;
+}
+
+.fiche-equipe {
+	margin: 0;
+	padding: 0;
+	line-height: 10%;
+}
+
+.fiche-equipe * {
+	color: black !important;
+}
+
+.fiche-equipe ~ #comments {
+	display: none;
+}
+
+#tm-asso-container #tm-equipe {
+	width: 87%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+/*=============================*/
+.main-navigation .primary-menu > li > a:hover, .main-navigation .primary-menu > li > a:focus {
+    color: white;
+}
+
+a:hover {
+    color: white !important;
+		text-decoration: none;
+}
+
+
+
+
+/*============ PAGE PROJETS=================*/
+
+#tm-projets-container article:nth-child(1) {
+    height: auto;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#tm-projets {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end ;
+}
+
+#tm-projets p, #tm-projets nav {
+	margin: auto;
+	width: 60%;
+	text-align: center;
+}
+
+#tm-projets nav {
+	margin: 6vh auto;
+}
+
+#menu-menu-projets {
+	display: flex;
+}
+
+#menu-menu-projets li {
+	display: flex;
+	margin: auto;
+	background-color: #fff;
+	width: 12vw;
+	height: 12vw;
+	-webkit-box-shadow: 2px 2px 10px -1px rgba(0,0,0,0.59);
+	-moz-box-shadow: 2px 2px 10px -1px rgba(0,0,0,0.59);
+	box-shadow: 2px 2px 10px -1px rgba(0,0,0,0.59);
+	transition-duration: 0.5s;
+}
+
+#menu-menu-projets li:hover {
+	transform: scale(1.05);
+}
+
+#menu-menu-projets li a {
+	color: #000;
+	font-size: 1.15vw;
+	text-transform: uppercase;
+	display: flex;
+	flex-direction: column;
+    margin: 0.7vw 0.7vw 0 0.7vw;
+    overflow: hidden;
+}
+
+#menu-menu-projets li a:hover {
+	color: #000 !important;
+}
+
+#menu-menu-projets li a img {
+    width: 100%;
+    height: auto;
+	filter: grayscale(1);
+	transition-duration: 0.5s;
+}
+
+#menu-menu-projets li:hover a img {
+	filter: grayscale(0);
+}
+
+#menu-menu-projets li a span {
+	margin: auto;
+	margin-bottom: 0.6vw;
+    white-space: nowrap;
+}
+
+/*============ END PAGE PROJETS=================*/
+
+
+/*============ PAGE FOURMILIERE=================*/
+
+#tm-fourmis-container article:nth-child(1) {
+	background-color: #76522E;
+    height: auto;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#tm-fourmis-container article:nth-child(1) .entry-content {
+	overflow: visible;
+}
+
+#tm-fourmis {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end ;
+}
+
+#tm-fourmis p, #tm-fourmis nav {
+	margin: auto;
+	width: 60%;
+	text-align: center;
+}
+
+#tm-fourmis nav {
+	margin: 6vh auto;
+}
+
+#menu-menu-fourmiliere {
+	display: flex;
+}
+
+#menu-menu-fourmiliere li {
+	display: flex;
+	margin: auto;
+	background-color: #fff;
+	width: 12vw;
+	height: 12vw;
+	-webkit-box-shadow: 2px 2px 10px -1px rgba(0,0,0,0.59);
+	-moz-box-shadow: 2px 2px 10px -1px rgba(0,0,0,0.59);
+	box-shadow: 2px 2px 10px -1px rgba(0,0,0,0.59);
+	transition-duration: 0.5s;
+	border-radius: 50%;
+}
+
+#menu-menu-fourmiliere li:hover {
+	transform: scale(1.05);
+}
+
+#menu-menu-fourmiliere li a {
+	color: #000;
+	font-size: 1.15vw;
+	text-transform: uppercase;
+	display: flex;
+	flex-direction: column;
+}
+
+#menu-menu-fourmiliere li a:hover {
+	color: #000 !important;
+}
+
+#menu-menu-fourfourmilieremis li a img {
+    width: 100%;
+    height: auto;
+	filter: grayscale(1);
+	transition-duration: 0.5s;
+}
+
+#menu-menu-fourmiliere li:hover a img {
+	filter: grayscale(0);
+}
+
+#menu-menu-fourmiliere li a span {
+	margin: auto;
+	margin-bottom: 0.6vw;
+    white-space: nowrap;
+}
+
+/*============ END PAGE FOURMILIERE=================*/

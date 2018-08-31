@@ -1,0 +1,23 @@
+
+#dashboard_right_now li a.post-fourmis-count:before {
+    content: url(http://localhost/tamanoir-wordpress/wp-content/uploads/2018/06/ant-mini.png);
+    filter: invert(1) opacity(0.5);
+}
+
+#dashboard_right_now li a.projets-tama-count:before {
+    content: url(http://localhost/tamanoir-wordpress/wp-content/uploads/2018/06/projects-mini.png);
+    filter: invert(1) opacity(0.5);
+}
+
+#dashboard_right_now li a.fiche-equipe-count:before {
+    content: url(http://localhost/tamanoir-wordpress/wp-content/uploads/2018/06/team-mini.png);
+    filter: invert(1) opacity(0.5);
+}
+
+#dashboard_right_now li a.bwg_gallery-count, #dashboard_right_now li a.bwg_album-count, #dashboard_right_now li a.bwg_tag-count {
+    display: none;
+}
+
+#adminmenu .wp-menu-image img {
+    opacity: 1;
+}
